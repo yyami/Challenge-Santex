@@ -1,7 +1,7 @@
 # Cypress Course
 
 Este proyecto corresponde al challenge del curso de automation dictado por Santex Academy,
-y contiene pruebas automatizadas utilizando Cypress, y Mochawesome para generar los resportes.
+y contiene pruebas automatizadas de la pagina [saucedemo.com](https://www.saucedemo.com/) utilizando Cypress para los tests y Mochawesome para generar los resportes.
 
 ## Requisitos previos
 
@@ -14,11 +14,11 @@ Asegúrate de tener instalado lo siguiente antes de ejecutar este proyecto:
 
 1. Clona este repositorio en tu máquina local:
    ```bash
-   git clone https://github.com/yyami/Chanllenge-Santex.git
+   git clone https://github.com/yyami/Challenge-Santex.git
 
 2. Ingresa a la carpeta del proyecto:
    ```bash
-   cd cypressCourse
+   cd challenge-final-santex
 
 3. Instala las dependencias necesarias:
       ```bash

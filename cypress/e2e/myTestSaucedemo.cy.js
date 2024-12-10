@@ -1,9 +1,14 @@
 describe('E2E Test Purchase Flow on Saucedemo page', { testIsolation: false }, () => {
-    const users = ['standard_user', 'problem_user'];/* set de ambos usuarios en un array para luego 
-    recorrer el array con el forEach y ejecutar los mismos tests para cada usuario */
-    it('Should visit Saucemo.com', () =>{
+    const users = ['standard_user', 'problem_user'];/* set de ambos usuarios en un array para luego recorrerlo con el forEach y ejecutar los mismos tests para cada usuario */
+    
+    it('Should visit Saucemo.com and clean the browser before', () =>{
+        cy.window().then((window) => {
+            window.sessionStorage.clear();
+            window.localStorage.clear();
+        });
         cy.visit('https://www.saucedemo.com');
     })
+
     users.forEach((userType) => { /* recorrido de users, por cada user se van a ejecutar cada it */
         describe(`Purchase flow for ${userType}`, () => {
             it(`Should login as ${userType}`, () => {
